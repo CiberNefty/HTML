@@ -5,8 +5,91 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>PAGINA CON TABLAS</title>
     <link rel="shortcut icon" href="/trash.png" type="image/x-icon">
+
+    <style>
+        table{
+            border-collapse: collapse;
+            border: 2px solid rgb(200, 200, 200);
+            letter-spacing: 1px;
+            font-size: 0.8rem;
+        }
+        td{
+            border: 1px solid rgb(190, 190, 190);
+            padding: 10px 20px;
+        }
+        th {
+            border: 1px solid rgb(190, 190, 190);
+            padding: 10px 20px;
+            background-color:rgb(96, 178, 250) ;
+        }
+    </style>
 </head>
 <body>
     <h1>PAGINA CON TABLAS</h1>
+
+    <!--TR es para cada fila
+        TD es para cada columna
+    <hr>
+    <tr>
+        <td>item 1</td>
+        <td>item 2</td>
+        <td>item 3</td>
+    </tr>-->
+    <hr>
+    <h2>Tabla de los alumnos</h2>
+    <table>
+        <colgroup>
+            <col style="background-color: rgb(168, 213, 250);">
+            <col>
+            <col>
+            <col>
+            <col>
+        </colgroup>
+
+        <tr>
+            <th>&nbsp;</th> <!--para poner un campo vacio es con &nbsp-->
+            <th>Jorge</th>
+            <th>Juan</th>
+            <th>Cristian</th>
+            <th>Daniel</th>
+        </tr>
+        <tr>
+            <td>Edad</td>
+            <td>23</td>
+            <td>43</td>
+            <td>17</td>
+            <td>27</td>
+        </tr>
+        <tr>
+            <td>Materias</td>
+            <td>HTML</td>
+            <td>CSS</td>
+            <td>REACT</td>
+            <td>PYTHON</td>
+        </tr>
+        <tr>
+            <td>Promedio</td>
+            <td>2.8</td>
+            <td>5.0</td>
+            <td>3.4</td>
+            <td>4.5</td>
+        </tr>
+        <tr>
+            <td>Aprobado</td>
+            <td>NO</td>
+            <td>SI</td>
+            <td>SI</td>
+            <td>SI</td>
+        </tr>
+        <tr>
+            <td>Años cursados</td>
+            <td>1</td>
+            <td>1</td>
+            <td>2</td>
+            <td>1</td>
+        </tr>
+    </table>
+
+
 </body>
 </html>
