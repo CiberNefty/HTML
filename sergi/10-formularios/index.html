@@ -15,7 +15,7 @@
         <input type="text" id="usuario2" name="usuario2" value="Daniel Vera" readonly>
         <input type="text" id="usuario1" name="usuario1" value="Daniel Vera" disabled>
         <br>
-        <h5>LIMITAR CARACTERES</h5>
+        <h3>LIMITAR CARACTERES</h3>
         <Label for="limitador">Limitid Caracter 6</Label>
         <input type="text" id="limitador" name="limitador" placeholder="Felipe" maxlength="12" min="4">
         <br> <hr>
@@ -35,16 +35,18 @@
         <br>
         <hr>
         <label for="Años programando">Años programando : </label>
-        <input type="number" id="programando" name="programando" placeholder="Años programando">
+        <input type="number" id="programando" name="programando" placeholder="Años programando" max="3" min="0">
         <br>
         <label for="archivo">Subí tu curriculum : </label>
-        <input type="file" id="archivo" name="archivo" value="file">
+        <input type="file" id="archivo" name="archivo" value="file"><br>
+        <label for="archivo">Multiplos archivos : </label>
+        <input type="file" id="archivo" name="archivo" value="file" multiple>
         <br>
         <label for="archivo">Fecha de ingreso laboral : </label>
         <input type="date" id="Fecha" name="Fecha" max="2023-09-08">
         <br>
         <hr>
-        <h2>TEXTO PARA ESCRIBIR OPINION</h2>
+        <h3>TEXTO PARA ESCRIBIR OPINION</h3>
         <label for="opinion">Subí tu curriculum : </label>
         <textarea  id="opinion" name="opinion" placeholder="Escribe tu opinion"></textarea>
         <br>
@@ -76,7 +78,7 @@
             </optgroup>
         </select>
         <br><hr>
-        <h2>INPUT'S DE ENVIO</h2>
+        <h3>INPUT'S DE ENVIO</h3>
         <input type="button" value="Enviar tus datos"> <!--Solo es un boton-->
         <br>
         <input type="submit" value="Enviar tus datos submit"> <!--submit ejecuta el formulario-->
