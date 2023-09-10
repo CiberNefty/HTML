@@ -6,94 +6,7 @@
     <title>Primera Pagina Web</title>
     <link rel="shortcut icon" href="/sergi/proyectos-2023/primeraPaginaWeb/assets/img/contacto_ico.png" type="image/x-icon">
 
-    <style>
-        body {
-            font-family: "Lucida Console", "Courier New", monospace;
-            background: linear-gradient(to left, rgb(189, 189, 255), rgb(255, 233, 236));
-            padding: 0;
-            margin: 0;
-        }
 
-        header {
-            text-align: center;
-        }
-
-        ul {
-            list-style-type: none;
-            margin: 0;
-            padding: 0;
-            overflow: hidden;
-            background-color: #333;
-        }
-
-        li {
-            float: left;
-        }
-
-        li a {
-            display: block;
-            color: white;
-            text-align: center;
-            padding: 14px 16px;
-            text-decoration: none;
-        }
-
-        li a:hover:not(.active) {
-            background-color: #e88ad5;
-        }
-
-        .active {
-            background-color: #7288f5;
-        }
-
-        h1 {
-            background-color: black;
-            padding: 10px;
-            margin: 0;
-            color: #92a4ff;
-        }
-
-        input[type=text],
-        input[type=email],
-        textarea,
-        select {
-            width: 100%;
-            padding: 12px 20px;
-            margin: 8px 0;
-            display: inline-block;
-            border: 1px solid #ccc;
-            border-radius: 4px;
-            box-sizing: border-box;
-        }
-
-        input[type=submit] {
-            width: 100%;
-            background-color: #4CAF50;
-            color: white;
-            padding: 14px 20px;
-            margin: 8px 0;
-            border: none;
-            border-radius: 4px;
-            cursor: pointer;
-        }
-
-        input[type=submit]:hover {
-            background-color: #45a049;
-        }
-
-        div.contenedor-formulario {
-            border-radius: 5px;
-            background-color: #f2f2f2;
-            padding: 20px;
-        }
-        .footer {
-            background-color: #333;
-            color: #FFF;
-            padding: 10px;
-            text-align: center;
-            clear: both;
-        }
-    </style>
 </head>
 <body>
     <header>
@@ -109,8 +22,40 @@
         </nav>
     </header>
 
-    <h2>El Legado de la Bola Mágica</h2>
+    <h2>CONTACTO</h2>
     <hr>
+
+    <form>
+        <label for="nombre">Nombres: </label>
+        <input type="text" id="nombre" name="nombre" placeholder="Escribe tu nombres" required>
+        <label for="apellidos">Apellidos: </label>
+        <input type="text" id="apellidos" name="apellidos" placeholder="Escribe tus apellidos" required>
+        <label for="email">Email: </label>
+        <input type="text" id="email" name="email" placeholder="Escribe tu correo electronico" required>
+        <label for="paises">Pais: </label>
+        <select name="paises" id="paises">
+            <option value="Colombia">Colombia</option>
+            <option value="España">España</option>
+            <option value="Bulgaria">Bulgaria</option>
+            <option value="Holanda">Holanda</option>
+            <option value="Suecia">Suecia</option>
+            <option value="Belgica">Belgica</option>
+            <option value="Paises Bajos">Paises Bajos</option>
+            <option value="Australia">Australia</option>
+            <option value="Finlandia">Finlandia</option>
+            <option value="Alemania">Alemania</option>
+            <option value="Canada">Canada</option>
+        </select>
+        <label for="comentarios">Comentario</label>
+        <textarea name="comentarios" id="comentarios" cols="0" rows="0">Escribì aquì tu comentario</textarea>
+        <input type="radio" name="rason social" required value="Servicios de Bases de Datos">Servicios de Bases de Datos
+        <input type="radio" name="rason social" required value="Servicios de Software">Servicios de Software
+        <input type="radio" name="rason social" required value="Servicios de Administrativos">Servicios de Administrativos
+        <input type="radio" name="rason social" required value="Marketing">Marketing
+        <input type="radio" name="rason social" required value="Proyectos">Proyectos
+        <input type="submit" value="Enviar">
+
+    </form>
 
     <footer>
         <p>Derechps reservados &copy; 2023</p>
