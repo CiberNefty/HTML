@@ -84,13 +84,17 @@
             text-align: center;
             clear: both;
         }
+        .centrado {
+            display: flex;
+            justify-content: center;
+        }
     </style>
 </head>
 <body>
     <header>
         <h1>HISTORIAS</h1>
         <nav>
-            <ul>
+            <ul class="centrado">
                 <!--El anchor es para tambien redirigir a otra pagina o seccion-->
                 <li><a href="index.html ">Home</a></li>
                 <li><a class="active" href="preferencias.html">Preferencias</a></li>
@@ -100,10 +104,10 @@
         </nav>
     </header>
 
-    <h2 style="margin: 10px;">Preferencias de la Bola Mágica</h2>
+    <h2 style="margin: 10px;" class="centrado">Preferencias de la Bola Mágica</h2>
     <hr>
 
-    <div class="container">
+    <div class="container" style="padding-bottom: 10px;">
         <table>
             <colgroup>
                 <col style="background-color: rgb(207, 207, 207);">
@@ -146,7 +150,7 @@
     </div>
 
     <footer class="footer">
-        <p>Derechps reservados &copy; 2023</p>
+        <p>Derechos reservados &copy; 2023</p>
     </footer>
 </body>
 </html>
