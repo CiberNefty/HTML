@@ -13,7 +13,7 @@
             padding: 0;
             margin: 0;
         }
-        
+
         header {
             text-align: center;
         }
@@ -92,13 +92,18 @@
             text-align: center;
             clear: both;
         }
+
+        .centrado {
+            display: flex;
+            justify-content: center;
+        }
     </style>
 </head>
 <body>
     <header>
         <h1>HISTORIAS</h1>
         <nav>
-            <ul>
+            <ul class="centrado">
                 <!--El anchor es para tambien redirigir a otra pagina o seccion-->
                 <li><a href="index.html ">Home</a></li>
                 <li><a href="preferencias.html">Preferencias</a></li>
@@ -108,7 +113,7 @@
         </nav>
     </header>
 
-    <h2 style="margin: 10px;">CONTACTO</h2>
+    <h2 style="margin: 10px;" class="centrado">CONTACTO</h2>
     <hr>
     <div class="contenedor-formulario">
         <form>
@@ -133,13 +138,14 @@
                 <option value="Canada">Canada</option>
             </select>
             <label for="comentarios">Comentario</label>
-            <textarea name="comentarios" id="comentarios" cols="0" rows="0">Escribì aquì tu comentario</textarea>
+            <textarea name="comentarios" id="comentarios" cols="0" rows="0" placeholder="Escribì aquì tu comentario"></textarea>
             <label for="rason social">Razon Social: </label>
             <input type="radio" name="razon social" required value="Servicios de Bases de Datos">Servicios de Bases de Datos
             <input type="radio" name="razon social" required value="Servicios de Software">Servicios de Software
             <input type="radio" name="razon social" required value="Servicios de Administrativos">Servicios de Administrativos
             <input type="radio" name="razon social" required value="Marketing">Marketing
             <input type="radio" name="razon social" required value="Proyectos">Proyectos
+            <hr>
             <input type="submit" value="Enviar">
 
         </form>
