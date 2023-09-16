@@ -61,12 +61,32 @@
         }
 
         div.gallery:hover {
-            border: 1px solid #777;
+            border: 4px solid #7288f5;
+            border-radius: 30px;
         }
 
         div.gallery img {
             width: 100%;
             height: auto;
+        }
+        .gallerys {
+            display: flex;
+            align-items: center;
+            column-gap: 20px;
+            overflow-x: scroll;
+            scroll-snap-type: x mandatory;
+        }
+        
+        .galley__item {
+            scroll-snap-align: center;
+            min-width: 75%;
+            
+        }
+        
+        .gallery__image {
+            width: 100%;
+            height: 100%;
+            object-fit: cover;
         }
 
         div.desc {
@@ -108,63 +128,63 @@
         <video src="assets/audio/Bola mágica.mp4" 
         autoplay
         controls
-        muted><p>Tu video no soporta este formato de video para poder descargarlo, haz click aqui <a href="assets/audio/Bola mágica.mp4"></a></p>
+        muted style="border-radius: 20px;"><p>Tu video no soporta este formato de video para poder descargarlo, haz click aqui <a href="assets/audio/Bola mágica.mp4"></a></p>
         </video>
     </div>
     
 
     <hr>
     <h2 class="centrado">FOTOS DE VIAJES</h2>
-    <section class="centrado">
+    <section class="gallerys" style="border-radius: 15px;">
         <div class="gallery">
-            <a href="assets/img/d1.jpeg" target="_blank"><img src="assets/img/d1.jpeg" alt="Daniel1"></a> <br>
+            <a href="assets/img/d1.jpeg" target="_blank"><img src="assets/img/d1.jpeg" alt="Daniel1" style="border-radius: 15px;" ></a> <br>
             <div class="desc">Casanare<br>
                 Viaje a Casanare <br>(El Sambo)</div>
         </div>
-        <div class="gallery">
-            <a href="assets/img/d2.jpeg" target="_blank"><img src="assets/img/d2.jpeg" alt="Daniel2"></a><br>
+        <div class="gallery__item">
+            <a href="assets/img/d2.jpeg" target="_blank"><img src="assets/img/d2.jpeg" alt="Daniel2" style="border-radius: 15px;"></a><br>
             <div class="desc">Ibague - Tolima <br>
             Viaje a la falta del nevado del Tolima. <br> (EL Rancho)</div>
         </div>
-        <div class="gallery">
-            <a href="assets/img/d3.jpeg" target="_blank"><img src="assets/img/d3.jpeg" alt="Daniel3"></a> <br>
+        <div class="gallery__item">
+            <a href="assets/img/d3.jpeg" target="_blank"><img src="assets/img/d3.jpeg" alt="Daniel3" style="border-radius: 15px;"></a> <br>
             <div class="desc">Choconta - Cundinamarca <br> 
             El Arbolito</div>
         </div>
-        <div class="gallery">
-            <a href="assets/img/d4.jpeg" target="_blank"><img src="assets/img/d4.jpeg" alt="Daniel4"></a> <br>
+        <div class="gallery__item">
+            <a href="assets/img/d4.jpeg" target="_blank"><img src="assets/img/d4.jpeg" alt="Daniel4"  style="border-radius: 20px;"></a> <br>
             <div class="desc">Choconta - Cundinamarca <br>
             Paisaje - Amanecer</div>
         </div>
-        <div class="gallery">
-            <a href="assets/img/d5.jpeg" target="_blank"><img src="assets/img/d5.jpeg" alt="Daniel5"></a> <br>
+        <div class="gallery__item">
+            <a href="assets/img/d5.jpeg" target="_blank"><img src="assets/img/d5.jpeg" alt="Daniel5" style="border-radius: 15px;"></a> <br>
             <div class="desc">Choconta - Cundinamarca <br>
             Fogata con duplicidad de Gallinas</div>
         </div>
-        <div class="gallery">
-            <a href="assets/img/d6.jpeg" target="_blank"><img src="assets/img/d6.jpeg" alt="Daniel6"></a> <br>
+        <div class="gallery__item">
+            <a href="assets/img/d6.jpeg" target="_blank"><img src="assets/img/d6.jpeg" alt="Daniel6" style="border-radius: 15px;"></a> <br>
             <div class="desc">Bogota - Cundinamarca <br>
             Viaje por la 15</div>
         </div>
-        <div class="gallery">
-            <a href="assets/img/d7.jpeg" target="_blank"><img src="assets/img/d7.jpeg" alt="Daniel7"></a><br>
+        <div class="gallery__item">
+            <a href="assets/img/d7.jpeg" target="_blank"><img src="assets/img/d7.jpeg" alt="Daniel7" style="border-radius: 15px;"></a><br>
             <div class="desc">Bogota - Cundinamarca <br>
             Viaje por bogota con Pipe en un Mirador.</div>
         </div>
-        <div class="gallery">
-            <a href="assets/img/d8.jpeg" target="_blank"><img src="assets/img/d8.jpeg" alt="Daniel8"> </a><br>
+        <div class="gallery__item">
+            <a href="assets/img/d8.jpeg" target="_blank"><img src="assets/img/d8.jpeg" alt="Daniel8" style="border-radius: 15px;"> </a><br>
             <div class="desc">Bogota <br>
             Bibloteca Virgilio Barco.</div>
         </div>
-        <div class="gallery">
-            <a href="assets/img/d9.jpeg" target="_blank"><img src="assets/img/d9.jpeg" alt="Daniel9"> </a><br>
+        <div class="gallery__item">
+            <a href="assets/img/d9.jpeg" target="_blank"><img src="assets/img/d9.jpeg" alt="Daniel9" style="border-radius: 15px;"> </a><br>
             <div class="desc">Lukas - Ya viejito.</div>
         </div>
         <div class="gallery">
-            <a href="assets/img/d10.jpeg" target="_blank"><img src="assets/img/d10.jpeg" alt="Daniel10"> </a><br>
+            <a href="assets/img/d10.jpeg" target="_blank"><img src="assets/img/d10.jpeg" alt="Daniel10" style="border-radius: 15px;"> </a><br>
             <div class="desc">Maquena - Oculta entre el Jardín.</div>
         </div>
-    </section>
+    </section>    
 
     <footer class="footer">
         <p>Derechos reservados &copy; 2023</p>
